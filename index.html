@@ -40,9 +40,17 @@ section{padding:90px 8%}
 .case img{width:100%;height:230px;object-fit:cover}
 .case div{padding:25px}
 .tag{color:#d6b36a}
-/* 图片缩小适配，避免尺寸过大撑满页面 */
+/* 通用数据图85%宽度 */
 .data-img{
     width:85%;
+    margin:0 auto 25px auto;
+    display:block;
+    border-radius:20px;
+    border:1px solid #222;
+}
+/* 抖音粉丝数据图单独缩小到75% */
+.data-img-small{
+    width:75%;
     margin:0 auto 25px auto;
     display:block;
     border-radius:20px;
@@ -53,6 +61,7 @@ footer{text-align:center;padding:30px;color:#777}
     .hero h1{font-size:40px}
     nav{display:none}
     .data-img{width:100%;}
+    .data-img-small{width:100%;}
     .platform-big-title{font-size:26px;}
     .sub-title{font-size:20px;}
 }
@@ -164,7 +173,8 @@ footer{text-align:center;padding:30px;color:#777}
 <h3 class="platform-big-title">二、抖音账号数据复盘</h3>
 
 <h4 class="sub-title">抖音后台粉丝核心数据</h4>
-<img class="data-img" src="images/dy-fan_data.jpg">
+<!-- 单独缩小图片，使用data-img-small类 -->
+<img class="data-img-small" src="images/dy-fan_data.jpg">
 
 <h4 class="sub-title">抖音粉丝画像分布</h4>
 <img class="data-img" src="images/dy-fan_portrait.png">
