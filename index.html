@@ -31,13 +31,23 @@ section{padding:90px 8%}
     color:#d6b36a;
     margin:35px 0 18px;
 }
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+/* 案例网格最小宽度加大，卡片整体变大 */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px
+}
 .card{background:#111;border:1px solid #222;border-radius:20px;padding:30px;transition:.3s}
 .card:hover{transform:translateY(-8px);border-color:#d6b36a}
 .num{font-size:42px;color:#00c2ff;font-weight:bold}
 .label{color:#aaa;margin-top:10px}
 .case{background:#111;border-radius:20px;overflow:hidden}
-.case img{width:100%;height:230px;object-fit:cover}
+/* 案例图片高度加高，视觉更大 */
+.case img{
+    width:100%;
+    height:280px;
+    object-fit:cover
+}
 .case div{padding:25px}
 .tag{color:#d6b36a}
 /* 通用数据图85%宽度 */
@@ -64,6 +74,7 @@ footer{text-align:center;padding:30px;color:#777}
     .data-img-small{width:100%;}
     .platform-big-title{font-size:26px;}
     .sub-title{font-size:20px;}
+    .case img{height:220px;}
 }
 </style>
 </head>
