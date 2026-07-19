@@ -76,6 +76,26 @@ footer{text-align:center;padding:30px;color:#777}
     .sub-title{font-size:20px;}
     .case img{height:220px;}
 }
+/* 新增平台分组标题 */
+.group-title{
+    width:100%;
+    grid-column: 1 / -1;
+    font-size:26px;
+    color:#00c2ff;
+    padding-left:10px;
+    border-left:4px solid #00c2ff;
+    margin-bottom:12px;
+}
+/* 纯文本数据说明区块 */
+.text-data-block{
+    margin-top:30px;
+    padding:24px;
+    background:#111;
+    border-radius:16px;
+    line-height:2.2;
+    font-size:17px;
+    color:#ddd;
+}
 </style>
 </head>
 <body>
@@ -90,8 +110,8 @@ footer{text-align:center;padding:30px;color:#777}
 
 <section class="hero">
 <div>
-<h1>个人up <span class="gold">大学生小陆</span> 展示主页</h1>
-<p>想做一个什么都不懂的小孩</p>
+<h1>短视频 <span class="gold">增长</span> 运营</h1>
+<p>内容策划｜账号运营｜用户增长｜数据复盘</p>
 <a class="btn" href="#data">查看案例</a>
 </div>
 </section>
@@ -99,32 +119,32 @@ footer{text-align:center;padding:30px;color:#777}
 <section id="data">
 <h2 class="title">账号<span class="gold">核心成绩</span></h2>
 <div class="grid">
-<div class="card"><div class="num">1.66W+</div><div class="label">B站粉丝总数</div></div>
-<div class="card"><div class="num">105.6W+</div><div class="label">B站累计播放量</div></div>
-<div class="card"><div class="num">10.28W+</div><div class="label">B站获赞总量</div></div>
-<div class="card"><div class="num">10W+</div><div class="label">B站收藏数据</div></div>
-<div class="card"><div class="num">1511</div><div class="label">B站评论互动</div></div>
-<div class="card"><div class="num">2119</div><div class="label">B站投币转化</div></div>
-<div class="card"><div class="num">1.5W+</div><div class="label">抖音粉丝总数</div></div>
-<div class="card"><div class="num">500W+</div><div class="label">抖音累计播放量</div></div>
-<div class="card"><div class="num">10W+</div><div class="label">抖音收藏数据</div></div>
-<div class="card"><div class="num">4000+</div><div class="label">抖音30日粉丝互动数</div></div>
+    <!-- B站分组标题 -->
+    <div class="group-title">B站平台数据</div>
+    <div class="card"><div class="num">1.66W</div><div class="label">B站粉丝总数</div></div>
+    <div class="card"><div class="num">10.28W+</div><div class="label">B站获赞总量</div></div>
+    <div class="card"><div class="num">105.6W+</div><div class="label">B站累计播放量</div></div>
+    <div class="card"><div class="num">10W+</div><div class="label">B站总收藏</div></div>
+    <div class="card"><div class="num">2000+</div><div class="label">B站投币转化</div></div>
+
+    <!-- 抖音分组标题 -->
+    <div class="group-title">抖音平台数据</div>
+    <div class="card"><div class="num">1.5W+</div><div class="label">抖音粉丝总数</div></div>
+    <div class="card"><div class="num">20W+</div><div class="label">抖音获赞总量</div></div>
+    <div class="card"><div class="num">500W+</div><div class="label">抖音累计播放量</div></div>
+    <div class="card"><div class="num">10W+</div><div class="label">抖音总收藏</div></div>
+    <div class="card"><div class="num">5000+</div><div class="label">抖音30日互动</div></div>
+</div>
+
+<!-- 可视化卡片下方保留纯文字原始数据 -->
+<div class="text-data-block">
+<strong>B站账号文字数据：</strong>粉丝：1.66W<br>获赞：10.28W+<br>总播放：105.6W+<br>总收藏：10W+<br>B站投币转化2000+
+<br><br>
+<strong>抖音账号文字数据：</strong>粉丝：1.5W+<br>获赞：20W+<br>累计播放：500W+<br>总收藏：10W+<br>30日互动：5000+
 </div>
 </section>
 
-<section>
-<h2 class="title">平台<span class="gold">账号矩阵</span></h2>
-<div class="grid">
-<div class="card">
-<h2>B站账号</h2>
-<p>粉丝：1.66W<br>获赞：10.28W+<br>总播放：105.6W+<br>总收藏：10W+<br>B站投币转化2000+</p>
-</div>
-<div class="card">
-<h2>抖音账号</h2>
-<p>粉丝：1.5W+<br>获赞：20W+<br>累计播放：500W+<br>总收藏：10W+<br>30日互动：5000+</p>
-</div>
-</div>
-</section>
+<!-- 原平台账号矩阵板块直接删除 -->
 
 <section id="case">
 <h2 class="title">爆款<span class="gold">内容案例</span></h2>
